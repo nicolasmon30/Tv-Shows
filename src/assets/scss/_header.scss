@@ -1,0 +1,98 @@
+.#{$prefix}Header{
+    &__detail{
+        .#{$prefix}Container{
+            border-bottom: 1px solid $gray3;
+        }
+        .#{$prefix}Header{
+            &__back{
+                display: block
+            }
+        }
+    }
+    &__box{
+        @include flex(space-between);
+        &__left,
+        &__right{
+            width: 50%;
+            @include flex();
+        }
+        &__left{
+            justify-content: flex-start;
+            @include mq(mobS1){
+                width: 70%;
+            }
+        }
+        &__right{
+            justify-content: flex-end;
+            @include mq(mobS1){
+                width: 30%;
+            }
+        }
+    }
+    &__back{
+        margin: 0 30px 0 0;
+        display: none;
+        @include mq(mobS2){
+            margin: 0 10px 0 0;
+        }
+        &__arrow{
+            width: 80px;
+            height: 40px;
+            background-color: $gray4;
+            @include flex();
+            position: relative;
+            @include mq(mobS2){
+                width: 60px;
+            }
+            &:before{
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 20px 20px 0;
+                border-color: transparent $gray4 transparent transparent;
+                position: absolute;
+                left: -20px;
+            }
+            a{
+                font-family: $roboto;
+                font-weight: bold;
+                font-size: toRem(18);
+                color: $gray2; 
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__logo{
+        h1{
+            font-family: $roboto;
+            font-weight: bold;
+            font-size: toRem(40);
+            color: $gray2; 
+            text-transform: uppercase;
+            -webkit-text-fill-color: $gray2;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba($black, 0.2); 
+            @include mq(mobS2){
+                font-size: toRem(30);
+            }
+        }
+    }
+    &__settings,
+    &__search{
+        img{
+            width: auto;
+            height: 40px;
+            @include mq(mobS2){
+                height: 30px;
+            }
+        }
+    }
+    &__settings{
+        margin: 0 30px 0 0;
+        @include mq(mobS2){
+            margin: 0 10px 0 0;
+        }
+    }
+}

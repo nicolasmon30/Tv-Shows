@@ -1,0 +1,37 @@
+$prefix : "tv";
+
+// COLORS
+
+$gray : #DCDCDC;
+$gray2 : #AFB2BD;
+$gray3 : #E0E2E5;
+$gray4 : #d6d6e2;
+$blue : #3381CB;
+$white: #ffffff;
+$black : #000000;
+
+$baseFont : 16;
+
+// MEDIAQUERIES
+$mediaqueries: (
+	hover: "(hover: hover)",
+	ie: "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)",
+	safari: "screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)",
+	safari2: "not all and (min-resolution:.001dpcm)",
+	mobS5: 320,
+	mobS3: 360,
+	mobS4: 380,
+	mobS2: 480,
+	mobS1: 540,
+	mobS: 640,
+	mob: 768,
+	tabS: 820,
+	tab: 991,
+	lapS3: 1024,
+	lapS2: 1199,
+	lapS: 1280,
+	lap: 1367,
+	deskS: 1440,
+	desk: 1560,
+	deskB: 1680
+);

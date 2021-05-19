@@ -1,0 +1,10 @@
+.#{$prefix}Container{
+    width: 100%;
+    margin: 0 auto;
+    &--full{
+        max-width: 100%;
+    }
+    &--limit{
+        max-width: 80%;
+    }
+}
